@@ -82,7 +82,7 @@
     <label>Description:</label>
     <input type="text" formControlName="description"
     placeholder="Description" class="form-control"
-    [ngClass]="{ 'is-invalid': submitted && ['description'].errors }">
+    [ngClass]="{ 'is-invalid': submitted && f['description'].errors }">
     <div *ngIf="submitted && f['description'].errors">
     <div *ngIf="f['description'].errors?.['required']">
     Description is required
